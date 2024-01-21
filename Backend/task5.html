@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function sumArray(arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+          sum += arr[i];
+        }
+        return console.log([sum]);
+      }
+      sumArray([1, 2, 3, 4, 5, 6]);
+      function findMinMax(arr) {
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] < 40) {
+            min = arr[i];
+          }
+          if (arr[i] > 40) {
+            max = arr[i];
+          }
+        }
+        console.log({ min, max });
+      }
+      findMinMax([32, 42, 25, 66, 54]);
+    </script>
+    <script>
+      let arr1 = [1, 4, 6, 7, 7, 5, 8, 6];
+      const remdup = arr1.filter(function (item, index) {
+        return arr1.indexOf(item) === index;
+      });
+
+      console.log(remdup);
+    </script>
+    <script>
+      function call(name) {
+        for (i = name.length - 1; i >= 0; i--) {
+          console.log(name[i]);
+        }
+      }
+      call(["yamaha", "honda", "suzuki"]);
+    </script>
+    <script>
+      function isPalindrome(str) {
+        const len = str.length;
+        for (let i = 0; i < len; i++) {
+          if (str[i] == str[len - 1 - i]) {
+            return true;
+          }
+        }
+        returnfalse;
+      }
+      const str1 = "madam";
+      console.log(isPalindrome(str1));
+    </script>
+    <script>
+      function even(num) {
+        return num.filter(function (num) {
+          return num % 2 === 0;
+        });
+      }
+      console.log(even([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+    </script>
+    <script>
+      function sumpositive(numbers) {
+        var sum = 0;
+        for (var i = 0; i < numbers.length; i++) {
+          if (numbers[i] > 0) {
+            sum += numbers[i];
+          }
+        }
+        return sum;
+      }
+      console.log(sumpositive([-4, 2, -6, 8]));
+    </script>
+    <script>
+      let a = [1, 2, 3];
+      let a1 = [4, 5, 6];
+      function concats() {
+        return [...a, ...a1];
+      }
+      console.log(concats());
+    </script>
+    <script>
+      let arr = [1, 2, 3, 5, 6];
+      function arrele(arr, element) {
+        return arr.indexOf(element);
+      }
+      console.log(arrele(arr, 5));
+    </script>
+    <script>
+      function squared(x) {
+        var result = [];
+        for (i = 0; i < x.length; i++) {
+          result[i] = x[i] * x[i];
+        }
+        return result;
+      }
+      console.log(squared([1, 2, 3, 4]));
+    </script>
+    <script>
+      function chunkArray(array, chunkSize) {
+        const result = [];
+        for (let i = 0; i < array.length; i += chunkSize) {
+          result.push(array.slice(i, i + chunkSize));
+        }
+        return result;
+      }
+      const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      const chunkedArray = chunkArray(myArray, 3);
+      console.log(chunkedArray);
+    </script>
+    <script>
+      function capitalword(word) {
+        var capital = [];
+        for (i = 0; i < word.length; i++) {
+          capitals = word[i].toUpperCase();
+          capital.push(capitals);
+        }
+        return capital;
+      }
+      console.log(capitalword(["apple", "ball"]));
+    </script>
+    <script>
+      function countings(count) {
+        const counts = {};
+        for (const numb of count) {
+          counts[numb] = counts[numb] ? counts[numb] + 1 : 1;
+        }
+        return counts;
+      }
+      const count = [1, 2, 2, 3, 4, 4];
+      console.log(countings(count));
+    </script>
+    <script>
+      function rotateRight(ray, numPositions) {
+        const len = ray.length;
+        const rotations = numPositions;
+        return [
+          ...ray.slice(len - rotations),
+          ...ray.slice(0, len - rotations),
+        ];
+      }
+      const ray = [1, 2, 3, 4, 5];
+      console.log(rotateRight(ray, 3));
+    </script>
+  </body>
+</html>

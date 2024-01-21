@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [1, 2, 3, 4, 5];
+      for (i = 0; i < arr.length; i++) console.log(arr[i]);
+    </script>
+    <script>
+      let arr1 = [3, 4, 6, 8, 9, 15];
+      for (i = 0; i < arr1.length; i++) {
+        if (arr1[i] % 3 == 0) {
+          console.log(arr1[i]);
+        }
+      }
+    </script>
+    <script>
+      let favouriteColours = ["blue", "yellow", "purple"];
+      for (let i = 0; i < favouriteColours.length; i++) {
+        console.log(favouriteColours[i]);
+      }
+    </script>
+    <script>
+      for (arr2 = 10; arr2 >= 1; arr2--) {
+        console.log(arr2);
+      }
+    </script>
+    <script>
+      for (i = 1; i <= 3; i++) {
+        if (i % 2 == 0) {
+          console.log(i + " is even");
+        } else {
+          console.log(i + " is odd");
+        }
+      }
+    </script>
+    <script>
+      num = [1, 2, 3, 4, 5];
+      sum = 0;
+      for (i = 0; i < num.length; i++) {
+        sum += num[i];
+      }
+      console.log(sum);
+    </script>
+    <script>
+      for (i = 1; i <= 10; i++) {
+        console.log(`2 x ${i} = ${2 * i}`);
+      }
+    </script>
+    <script>
+      let repeat = "repeat 5 times";
+      for (i = 0; i <= 5; i++);
+      console.log(repeat);
+    </script>
+    <script>
+      do {
+        number = prompt("please enter number greater than 5:");
+      } while (number <= 5);
+      console.log(`you entered ${number}`);
+    </script>
+    <script>
+      for (let i = 5; i >= 1; i--);
+      console.log("Countdown: " + i);
+
+      Output: Countdown: 5;
+
+      Countdown: 4;
+
+      Countdown: 3;
+
+      Countdown: 2;
+
+      Countdown: 1;
+    </script>
+  </body>
+</html>
